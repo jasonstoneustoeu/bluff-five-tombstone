@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bluff-five-tombstone
+    runtime: node
+    plan: free
+    rootDir: bluff-five-publication-ready
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeploy: true
